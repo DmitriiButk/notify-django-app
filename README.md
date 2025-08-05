@@ -20,7 +20,6 @@
 - Docker и Docker Compose
 - Twilio для отправки SMS
 - Telegram Bot API
--
 
 ## Установка и запуск
 
@@ -36,7 +35,6 @@
 
 ```bash
 git clone https://github.com/DmitriiButk/notify-django-app.git
-cd notification-service
 ```
 
 Настройте файл .env:
@@ -75,12 +73,16 @@ TWILIO_PHONE_NUMBER=your_twilio_phone_number
 
 ```
 
-### Запустите контейнеры:
+### Запуск контейнеров:
 
 ```bash
 docker-compose up -d --build
 ```
+### Остановка контейнеров:
 
+```bash
+docker-compose down
+```
 ### Создайте суперпользователя:
 
 ```bash
